@@ -50,17 +50,56 @@
             </objects>
             <point key="canvasLocation" x="442" y="23"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Hello Spaceboy-->
         <scene sceneID="rAo-8X-6JU">
             <objects>
                 <viewController id="Mkc-CJ-PVz" customClass="DetailsViewController" customModule="TableViewHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3F-xt-DKm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yvy-Sa-Gw6">
+                                <rect key="frame" x="16" y="263" width="361" height="48.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Phone" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYJ-7n-fvY">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G1-ka-rwr">
+                                        <rect key="frame" x="0.0" y="28.333333333333314" width="361" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcy-jM-mBr">
+                                <rect key="frame" x="60" y="167" width="273" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="m5g-9O-jsW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yvy-Sa-Gw6" firstAttribute="leading" secondItem="m5g-9O-jsW" secondAttribute="leading" constant="16" id="6ck-LT-iTV"/>
+                            <constraint firstItem="m5g-9O-jsW" firstAttribute="trailing" secondItem="Yvy-Sa-Gw6" secondAttribute="trailing" constant="16" id="9Mv-kE-ymD"/>
+                            <constraint firstItem="Yvy-Sa-Gw6" firstAttribute="top" secondItem="m5g-9O-jsW" secondAttribute="top" constant="160" id="I60-qe-gHb"/>
+                            <constraint firstItem="wcy-jM-mBr" firstAttribute="top" secondItem="m5g-9O-jsW" secondAttribute="top" constant="64" id="e6h-Tw-clZ"/>
+                            <constraint firstItem="m5g-9O-jsW" firstAttribute="bottom" secondItem="Yvy-Sa-Gw6" secondAttribute="bottom" constant="506.32999999999998" id="mRW-bC-zgc"/>
+                            <constraint firstItem="wcy-jM-mBr" firstAttribute="leading" secondItem="m5g-9O-jsW" secondAttribute="leading" constant="60" id="pon-hH-4zJ"/>
+                            <constraint firstItem="m5g-9O-jsW" firstAttribute="trailing" secondItem="wcy-jM-mBr" secondAttribute="trailing" constant="60" id="rJS-8Z-Bxq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WVJ-CK-eXi"/>
+                    <navigationItem key="navigationItem" title="Hello Spaceboy" id="WVJ-CK-eXi"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="9G1-ka-rwr" id="lgx-ZT-07p"/>
+                        <outlet property="fullNameLabel" destination="wcy-jM-mBr" id="GVG-2l-Y3B"/>
+                        <outlet property="phoneLabel" destination="LYJ-7n-fvY" id="54f-nr-Cj6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abZ-Zv-qQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

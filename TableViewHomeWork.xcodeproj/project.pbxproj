@@ -16,6 +16,7 @@
 		E93444302A6D0CEF00796994 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934442F2A6D0CEF00796994 /* DetailsViewController.swift */; };
 		E93444322A6D0D0000796994 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93444312A6D0D0000796994 /* DetailModel.swift */; };
 		E93444382A6D1FB200796994 /* ContacsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93444372A6D1FB200796994 /* ContacsViewController.swift */; };
+		E934443A2A6D5CC400796994 /* ListOfInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93444392A6D5CC400796994 /* ListOfInfos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E934442F2A6D0CEF00796994 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E93444312A6D0D0000796994 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		E93444372A6D1FB200796994 /* ContacsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacsViewController.swift; sourceTree = "<group>"; };
+		E93444392A6D5CC400796994 /* ListOfInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfInfos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				E93444242A6D0C6100796994 /* Assets.xcassets */,
+				E93444392A6D5CC400796994 /* ListOfInfos.swift */,
 				E93444312A6D0D0000796994 /* DetailModel.swift */,
 			);
 			path = Model;
@@ -183,6 +186,7 @@
 				E93444232A6D0C6000796994 /* TableViewHomeWork.xcdatamodeld in Sources */,
 				E93444192A6D0C6000796994 /* AppDelegate.swift in Sources */,
 				E934441B2A6D0C6000796994 /* SceneDelegate.swift in Sources */,
+				E934443A2A6D5CC400796994 /* ListOfInfos.swift in Sources */,
 				E93444382A6D1FB200796994 /* ContacsViewController.swift in Sources */,
 				E93444302A6D0CEF00796994 /* DetailsViewController.swift in Sources */,
 			);
