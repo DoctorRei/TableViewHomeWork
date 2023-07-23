@@ -20,6 +20,7 @@ struct Person {
     }
     
     static func getContactList() -> [Person] {
+        
         [
             Person(name: DataStore().name.randomElement() ?? "",
                    seccondName: DataStore().seccondName.randomElement() ?? "",
