@@ -25,7 +25,7 @@ class SecondDetailViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        infoOfBoy.count / 2
+        infoOfBoy.count / 2 // просто выпендриваюсь, не обращайте внимания
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
