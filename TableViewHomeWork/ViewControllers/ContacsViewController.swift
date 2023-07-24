@@ -9,7 +9,7 @@ import UIKit
 
 class ContacsViewController: UITableViewController {
 
-    var contactList = Person.getContactList()
+    var contactList: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class ContacsViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactList.count
+        contactList?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,44 +32,6 @@ class ContacsViewController: UITableViewController {
         
         return cell
     }
-
-   
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
     // MARK: - Navigation
 
@@ -78,20 +40,6 @@ class ContacsViewController: UITableViewController {
         guard let detailsVC = segue.destination as? DetailsViewController else { return }
         guard let selectedContact = tableView.indexPathForSelectedRow else { return }
         detailsVC.personInfo = contactList[selectedContact.row]
-        
-        let tabBarVC = segue.destination as? UITabBarController
-        let seccondVC = tabBarVC?.viewControllers
-        
-        seccondVC?.forEach({ details in
-            if let seccondScreen = details as? SecondDetailViewController {
-                seccondScreen.infoOfBoy = contactList
-            }
-        })
-        
-        
-                
-        
+                            
     }
-   
-
 }

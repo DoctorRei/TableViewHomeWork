@@ -18,6 +18,7 @@
 		E93444382A6D1FB200796994 /* ContacsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93444372A6D1FB200796994 /* ContacsViewController.swift */; };
 		E934443A2A6D5CC400796994 /* ListOfInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93444392A6D5CC400796994 /* ListOfInfos.swift */; };
 		E934443C2A6D60F800796994 /* SecondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E934443B2A6D60F800796994 /* SecondDetailViewController.swift */; };
+		E9919F622A6E901C00D3C11D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9919F612A6E901C00D3C11D /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E93444372A6D1FB200796994 /* ContacsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContacsViewController.swift; sourceTree = "<group>"; };
 		E93444392A6D5CC400796994 /* ListOfInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfInfos.swift; sourceTree = "<group>"; };
 		E934443B2A6D60F800796994 /* SecondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailViewController.swift; sourceTree = "<group>"; };
+		E9919F612A6E901C00D3C11D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				E934441E2A6D0C6000796994 /* Main.storyboard */,
-				E934443B2A6D60F800796994 /* SecondDetailViewController.swift */,
 				E93444332A6D0D2600796994 /* ViewControllers */,
 				E93444352A6D0D8A00796994 /* Settings */,
 				E93444342A6D0D6100796994 /* Info */,
@@ -79,8 +80,10 @@
 		E93444332A6D0D2600796994 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9919F612A6E901C00D3C11D /* TabBarController.swift */,
 				E93444372A6D1FB200796994 /* ContacsViewController.swift */,
 				E934442F2A6D0CEF00796994 /* DetailsViewController.swift */,
+				E934443B2A6D60F800796994 /* SecondDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				E93444322A6D0D0000796994 /* DetailModel.swift in Sources */,
 				E93444232A6D0C6000796994 /* TableViewHomeWork.xcdatamodeld in Sources */,
 				E934443C2A6D60F800796994 /* SecondDetailViewController.swift in Sources */,
+				E9919F622A6E901C00D3C11D /* TabBarController.swift in Sources */,
 				E93444192A6D0C6000796994 /* AppDelegate.swift in Sources */,
 				E934441B2A6D0C6000796994 /* SceneDelegate.swift in Sources */,
 				E934443A2A6D5CC400796994 /* ListOfInfos.swift in Sources */,

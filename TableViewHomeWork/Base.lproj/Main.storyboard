@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="N9u-Rq-EFa" id="k4n-ry-bKv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Boys" selectedImage="person.crop.circle.dashed" catalog="system" id="wiT-q2-voA"/>
+                    <tabBarItem key="tabBarItem" title="Boys" image="person.fill" catalog="system" selectedImage="person.crop.circle.dashed" id="wiT-q2-voA"/>
                     <navigationItem key="navigationItem" title="Contact List" id="iTy-UR-u1Q"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjt-pd-vsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -74,7 +74,7 @@
                             <outlet property="delegate" destination="8Bz-UQ-cHD" id="ilb-k7-EIR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Contact+" selectedImage="phone.bubble.left" catalog="system" id="3mw-38-jB6"/>
+                    <tabBarItem key="tabBarItem" title="Contact+" image="info.bubble" catalog="system" selectedImage="phone.bubble.left" id="3mw-38-jB6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D21-av-0Rd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,10 +154,11 @@
         <!--Tab Bar Controller-->
         <scene sceneID="tXg-2j-rA4">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Je5-qr-7jQ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Je5-qr-7jQ" customClass="TabBarController" customModule="TableViewHomeWork" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="MCm-hN-pUZ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Uf-Sv-chh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -172,7 +173,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.bubble" catalog="system" width="128" height="110"/>
         <image name="person.crop.circle.dashed" catalog="system" width="128" height="123"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="phone.bubble.left" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
