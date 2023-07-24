@@ -1,5 +1,5 @@
 //
-//  ContacsViewController.swift
+//  SecondDetailViewController.swift
 //  TableViewHomeWork
 //
 //  Created by Акира on 23.07.2023.
@@ -7,33 +7,38 @@
 
 import UIKit
 
-class ContacsViewController: UITableViewController {
+class SecondDetailViewController: UITableViewController {
 
-    var contactList = Person.getContactList()
+    var infoOfBoy: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(infoOfBoy ?? "hello")
     }
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactList.count
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 2
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 2
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        "Hello"
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-        let person = contactList[indexPath.row]
-        var content = cell.defaultContentConfiguration()
-        
-        content.text = person.fullName
-        cell.contentConfiguration = content
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DetailInfo", for: indexPath)
+
+
         return cell
     }
 
-   
 
     /*
     // Override to support conditional editing of the table view.
@@ -70,28 +75,15 @@ class ContacsViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let detailsVC = segue.destination as? DetailsViewController else { return }
-        guard let selectedContact = tableView.indexPathForSelectedRow else { return }
-        detailsVC.personInfo = contactList[selectedContact.row]
-        
-        let tabBarVC = segue.destination as? UITabBarController
-        let seccondVC = tabBarVC?.viewControllers
-        
-        seccondVC?.forEach({ details in
-            if let seccondScreen = details as? SecondDetailViewController {
-                seccondScreen.infoOfBoy = contactList
-            }
-        })
-        
-        
-                
-        
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-   
+    */
 
 }
+
